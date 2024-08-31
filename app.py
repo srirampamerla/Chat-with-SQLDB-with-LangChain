@@ -93,3 +93,6 @@ if user_query:
         response=agent.run(user_query,callbacks=[streamlit_callback])
         st.session_state.messages.append({"role":"assistant","content":response})
         st.write(response)
+
+# To run this streamlit run app.py
+# In case any issues with requirements SQLAlchemy,mysql-connector-python 
