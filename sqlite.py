@@ -1,10 +1,10 @@
 import sqlite3
 
-## COnnect to SQL lite
+## Connect to SQL lite
 
 connection=sqlite3.connect("student.db")
 
-## create a cursor object to insert record,create table
+## create a cursor object to insert record, create table
 
 cursor=connection.cursor()
 
@@ -36,3 +36,5 @@ for row in data:
 ## Commit the changes in the database
 connection.commit()
 connection.close()
+
+# Run-> python sqlite.py
